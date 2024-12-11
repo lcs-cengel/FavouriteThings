@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		70EF0C182D09FE350000A09D /* FavouriteThingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EF0C172D09FE350000A09D /* FavouriteThingsApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		70EF0C142D09FE350000A09D /* FavouriteThings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavouriteThings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70EF0C172D09FE350000A09D /* FavouriteThingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteThingsApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		70EF0C0B2D09FE350000A09D = {
 			isa = PBXGroup;
 			children = (
+				70EF0C172D09FE350000A09D /* FavouriteThingsApp.swift */,
 				70EF0C162D09FE350000A09D /* FavouriteThings */,
 				70EF0C152D09FE350000A09D /* Products */,
 			);
@@ -119,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70EF0C182D09FE350000A09D /* FavouriteThingsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
