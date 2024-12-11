@@ -15,10 +15,10 @@ struct ThingsListView: View {
                 ThingsView(thingtoShow: sleep)
                 ThingsView(thingtoShow: lego)
                 ThingsView(thingtoShow: sittingDown)
-               
+                ThingsView(thingtoShow: money)
                 ThingsView(thingtoShow: videoGames)
             }
-            navigationTitle("My Favorite Things:")
+            .navigationTitle("My Favorite Things:")
            
         }
         .padding()
