@@ -9,11 +9,17 @@ import SwiftUI
 
 struct ThingsListView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            List{
+                ThingsView(thingtoShow: gym)
+                ThingsView(thingtoShow: sleep)
+                ThingsView(thingtoShow: lego)
+                ThingsView(thingtoShow: sittingDown)
+               
+                ThingsView(thingtoShow: videoGames)
+            }
+            navigationTitle("My Favorite Things:")
+           
         }
         .padding()
     }
