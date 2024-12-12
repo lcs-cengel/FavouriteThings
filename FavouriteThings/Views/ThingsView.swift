@@ -9,24 +9,25 @@ import SwiftUI
 
 struct ThingsView: View {
     
-    let thingtoShow: Thing
+    let thingToShow: Thing
     
     var body: some View {
         HStack{
             VStack{
-                Image(thingtoShow.icon)
+                Image(thingToShow.icon)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 40, height: 40, alignment: .center)
                 Spacer()
             }
             .padding()
-            VStack(alignment: .leading){
-                Text(thingtoShow.title)
+            VStack(alignment: .center){
+                Text(thingToShow.title)
                     .font(.system(size: 30))
+                  
                 
-                Text(thingtoShow.description)
-                    .font(.system(size: 30))
+                Text(thingToShow.description)
+                    .font(.system(size: 20))
                 
                 
             }

@@ -10,18 +10,19 @@ import SwiftUI
 struct ThingsListView: View {
     var body: some View {
         NavigationStack{
-            List{
-                ThingsView(thingtoShow: gym)
-                ThingsView(thingtoShow: sleep)
-                ThingsView(thingtoShow: lego)
-                ThingsView(thingtoShow: sittingDown)
-                ThingsView(thingtoShow: money)
-                ThingsView(thingtoShow: videoGames)
+            List(myFavorite) { currentThing in
+               
+                NavigationLink {
+                    DetailsView(favoritesToShow: currentThing)
+                } label: {
+                    ThingsView(thingToShow: currentThing)
+                }
+                
             }
             .navigationTitle("My Favorite Things:")
            
         }
-        .padding()
+
     }
 }
 

@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct DetailsView: View {
+    
+    let favoritesToShow: Thing
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack {
+                Image(favoritesToShow.icon)
+                    .resizable()
+                    .scaledToFit()
+                
+                Text(favoritesToShow.description)
+            }
+            .padding()
+        }
+        .navigationTitle(favoritesToShow.title)
+        
     }
+    
 }
 
 #Preview {
-    DetailsView()
+    DetailsView(favoritesToShow: lego)
 }

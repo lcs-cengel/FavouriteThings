@@ -21,3 +21,4 @@ let money = Thing(icon: "money", description: "Money makes the world go round", 
 let sittingDown = Thing(icon: "sitting", description: "When you are no longer standing and sitting on something", title: "Sitting Dowm:")
 let videoGames = Thing(icon: "games", description: "Games but on a virtual screen", title: "Video games:")
 
+let myFavorite = [ gym, lego, sleep, money, sittingDown, videoGames ]
