@@ -18,11 +18,16 @@ struct DetailsView: View {
                     .resizable()
                     .scaledToFit()
                 
-                Text(favoritesToShow.description)
+                
+                Text(favoritesToShow.largeDescription)
+                
+                
             }
             .padding()
         }
         .navigationTitle(favoritesToShow.title)
+        .font(.system(size: 20))
+        
         
     }
     

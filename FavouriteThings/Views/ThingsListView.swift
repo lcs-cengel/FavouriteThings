@@ -20,7 +20,7 @@ struct ThingsListView: View {
                 
             }
             .navigationTitle("My Favorite Things:")
-           
+            
         }
 
     }
